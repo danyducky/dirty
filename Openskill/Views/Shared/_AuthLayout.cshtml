@@ -1,0 +1,72 @@
+﻿@using Openskill.Helpers.Html
+@using Openskill.Helpers.Filters
+@using Openskill.Helpers.Enums
+@{
+    var authItem = ViewData[AuthMenu.Key] as AuthItem?;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Авторизация - Openskill</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Openskill.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    @await RenderSectionAsync("Styles", required: false)
+
+    <style>
+        html, body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .input-validation-error {
+            border: 1px solid #ff0000 !important;
+        }
+
+        .item {
+            flex-basis: 50%;
+        }
+
+        .btn:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .active {
+            color: #fff;
+            background-color: #0d6efd;
+        }
+
+        .active:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="h-100 d-flex align-items-center justify-content-center flex-column">
+        <div class="d-flex justify-content-around text-center tabs" style="width: 22rem;">
+            <a class="flex-grow-1 item btn @Html.IsActive(authItem, AuthItem.Login)" asp-controller="auth" asp-action="index" asp-route-returnurl="@ViewBag.ReturnUrl">Вход</a>
+            <a class="flex-grow-1 item btn @Html.IsActive(authItem, AuthItem.Register)" asp-controller="auth" asp-action="register" asp-route-returnurl="@ViewBag.ReturnUrl">Регистрация</a>
+        </div>
+        @RenderBody()
+    </div>
+
+    <! –– Scripts ––>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,17 @@
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\bin\Debug\net6.0\Openskill.DataAccess.deps.json
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\bin\Debug\net6.0\Openskill.DataAccess.dll
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\bin\Debug\net6.0\Openskill.DataAccess.pdb
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\bin\Debug\net6.0\Openskill.Domain.dll
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\bin\Debug\net6.0\Openskill.Domain.pdb
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\obj\Debug\net6.0\Openskill.DataAccess.csproj.AssemblyReference.cache
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\obj\Debug\net6.0\Openskill.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\obj\Debug\net6.0\Openskill.DataAccess.AssemblyInfoInputs.cache
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\obj\Debug\net6.0\Openskill.DataAccess.AssemblyInfo.cs
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\obj\Debug\net6.0\Openskill.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\obj\Debug\net6.0\Openskill.DataAccess.csproj.CopyComplete
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\obj\Debug\net6.0\Openskill.DataAccess.dll
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\obj\Debug\net6.0\refint\Openskill.DataAccess.dll
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\obj\Debug\net6.0\Openskill.DataAccess.pdb
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\obj\Debug\net6.0\ref\Openskill.DataAccess.dll
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\bin\Debug\net6.0\Openskill.DataAccess.runtimeconfig.json
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.DataAccess\obj\Debug\net6.0\Openskill.DataAccess.genruntimeconfig.cache

@@ -1,0 +1,76 @@
+﻿@model Openskill.ViewModels.Track.TrackInfoViewModel
+
+<style>
+    .flex-basis-75 {
+        flex-basis: 75%;
+    }
+
+    .flex-basis-25 {
+        flex-basis: 25%;
+    }
+
+    .link-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        min-height: 30px;
+    }
+
+    .link-block .link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .link-block:hover:not(.activelink) {
+        background-color: lightgray;
+    }
+
+    .link-block:hover .link {
+        color: black;
+    }
+</style>
+
+<div>
+    <div class="text-center mb-5 three">
+        <h1>@Model.Title</h1>
+    </div>
+
+    <div class="container d-flex">
+
+        <div class="flex-basis-75">
+            @Html.Raw(Model.Description)
+        </div>
+
+        <div class="flex-basis-25">
+            <div class="card">
+                <img class="card-img-top" src="~/img/girl-preview.jpg" alt="Card image cap">
+                <div class="card-body" style="padding: 1rem 0">
+                    @if (Model.Modules.Count() == 0)
+                    {
+                        <div style="padding: 0 1rem;">
+                            <span>Модулей пока нет, но они обязательно появятся.</span>
+                        </div>
+                    }
+                    else
+                    {
+                        @foreach(var module in Model.Modules)
+                        {
+                            <div class="link-block">
+                                <a asp-controller="Track" 
+                                   asp-action="Module" 
+                                   asp-route-id="@Model.Id" 
+                                   asp-route-moduleId="@module.Id"
+                                   class="link">
+                                @module.Title
+                                </a>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

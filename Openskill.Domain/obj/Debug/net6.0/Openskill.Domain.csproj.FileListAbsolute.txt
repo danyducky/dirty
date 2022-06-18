@@ -1,0 +1,12 @@
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.Domain\bin\Debug\net6.0\Openskill.Domain.deps.json
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.Domain\bin\Debug\net6.0\Openskill.Domain.dll
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.Domain\bin\Debug\net6.0\Openskill.Domain.pdb
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.Domain\obj\Debug\net6.0\Openskill.Domain.csproj.AssemblyReference.cache
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.Domain\obj\Debug\net6.0\Openskill.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.Domain\obj\Debug\net6.0\Openskill.Domain.AssemblyInfoInputs.cache
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.Domain\obj\Debug\net6.0\Openskill.Domain.AssemblyInfo.cs
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.Domain\obj\Debug\net6.0\Openskill.Domain.csproj.CoreCompileInputs.cache
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.Domain\obj\Debug\net6.0\Openskill.Domain.dll
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.Domain\obj\Debug\net6.0\refint\Openskill.Domain.dll
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.Domain\obj\Debug\net6.0\Openskill.Domain.pdb
+C:\Users\morik\Desktop\Projects\Openskill\Openskill.Domain\obj\Debug\net6.0\ref\Openskill.Domain.dll

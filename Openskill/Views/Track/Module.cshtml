@@ -1,0 +1,97 @@
+﻿@model Openskill.ViewModels.Track.TrackModuleViewModel
+
+<style>
+    .flex-basis-75 {
+        flex-basis: 75%;
+    }
+
+    .flex-basis-25 {
+        flex-basis: 25%;
+    }
+
+    .link-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        min-height: 30px;
+    }
+
+    .link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .link-block:hover:not(.activelink) {
+        background-color: lightgray;
+    }
+
+    .link-block:hover .link {
+        color: black;
+    }
+
+    .activelink {
+        background-color: #F1BC31;
+    }
+</style>
+
+<div>
+    <div class="text-center mb-5 three" style="position: relative;">
+        <span style="position: absolute; top: 25px; left: 50px; font-style: italic;">
+            <a asp-controller="Track" 
+               asp-action="Info" 
+               asp-route-id="@Model.Id"
+               class="link">
+                Назад к курсу
+            </a>
+            </span>
+        <h1>@Model.Title</h1>
+    </div>
+
+    <div class="d-flex justify-content-center flex-column container">
+        <video controls>
+            <source src="~/@Model.VideoPath">
+        </video>
+        <div style="text-align: center; font-size: 18px; font-weight: bold; padding: 1rem 0;">
+            <span>
+                @Model.Caption
+            </span>
+        </div>
+    </div>
+
+    <div class="container d-flex">
+
+        <div class="flex-basis-75">
+            @Html.Raw(Model.Content)
+
+            @if (Model.IsLast)
+            {
+                <div style="display: flex; justify-content:center;margin-top: 2rem;">
+                    <img src="~/img/cert.jpg" width="800" />
+                </div>
+            }
+        </div>
+
+        <div class="flex-basis-25">
+            <div class="card">
+                <img class="card-img-top" src="~/img/girl-preview.jpg" alt="Card image cap">
+                <div class="card-body" style="padding: 1rem 0">
+                    @foreach(var module in Model.Modules)
+                    {
+                        <div class="link-block @(Model.ModuleId == module.Id ? "activelink" : string.Empty)">
+                            <a asp-controller="Track" 
+                               asp-action="Module" 
+                               asp-route-id="@Model.Id" 
+                               asp-route-moduleId="@module.Id"
+                               class="link">
+                                @module.Title
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
