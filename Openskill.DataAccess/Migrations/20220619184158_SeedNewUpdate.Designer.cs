@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Openskill.DataAccess;
@@ -11,9 +12,10 @@ using Openskill.DataAccess;
 namespace Openskill.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220619184158_SeedNewUpdate")]
+    partial class SeedNewUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -130,21 +132,21 @@ namespace Openskill.DataAccess.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "09959a79-17de-4207-8171-b2f1e506a655",
+                            ConcurrencyStamp = "2f0fbb1a-7182-4958-a8b2-46286b086bdb",
                             Name = "General",
                             NormalizedName = "GENERAL"
                         },
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "50db0baf-9dfe-4cce-a589-b9268db004df",
+                            ConcurrencyStamp = "87be70e0-499b-479d-8b11-3e430506fb3e",
                             Name = "Moderator",
                             NormalizedName = "MODERATOR"
                         },
                         new
                         {
                             Id = 3,
-                            ConcurrencyStamp = "d52c0a3b-b396-4a14-aed2-3ebc4471a2d9",
+                            ConcurrencyStamp = "d869a157-cc57-4c60-8ccb-0dcf92d1ec61",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         });
@@ -201,7 +203,7 @@ namespace Openskill.DataAccess.Migrations
                         new
                         {
                             Id = 1,
-                            Description = "Добро пожаловать на модуль «Проблемные коммуникации»!<br><br>Основная цель модуля - приобретение навыков проблемной коммуникации: умение определять проблему, исследовать, рассуждать и производить знания.<br><br>Модуль состоит из восьми блоков. Каждый блок занимает от двух до десяти минут.<br><br><b>Преподаватель модуля «Проблемные коммуникации»</b>: Никитина Алёна Сергеевна, кандидат социологических наук, доцент кафедры управления персоналом<br><br>Длительность обучения: шестьдесят минут",
+                            Description = "Добро пожаловать на модуль «Проблемные коммуникации»!<br><br>Основная цель модуля - приобретение навыков проблемной коммуникации: умение определять проблему, исследовать, рассуждать и производить знания.<br><br>Модуль состоит из восьми блоков .Каждый блок занимает от двух до десяти минут.<br><br><b>Преподаватель модуля «Проблемные коммуникации»</b>: Никитина Алёна Сергеевна, кандидат социологических наук, доцент кафедры управления персоналом<br><br>Длительность обучения: шестьдесят минут",
                             IsAdditional = false,
                             Title = "Проблемные коммуникации"
                         },
